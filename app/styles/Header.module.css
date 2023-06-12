@@ -1,0 +1,162 @@
+.headerContainer {
+    width: 100%;
+    height: 20vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 1em;
+}
+
+.buttonMobile {
+    border: 0;
+
+    background: transparent;
+
+    cursor: pointer;
+}
+
+.inputCheckBox {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+
+    font-size: 48px;
+    color: #58D8C0;
+    
+    user-select: none;
+}
+
+.headerMenu {
+    width: inherit;
+
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+
+    position: relative;
+}
+
+.headerMenuList {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+
+    list-style: none;
+}
+
+.menuItem {
+    font-size: 1.2em;
+    
+    color: #ccd6f6;
+
+    cursor: pointer;
+
+    transition: color 300ms ease;
+}
+
+.menuItem:hover {
+    color: #ccd6f68f;
+}
+
+.headerButtonCv {
+    width: 10%;
+
+    padding: 1em;
+
+    border: 1px solid #58D8C0;
+    border-radius: .2em;
+    
+    background-color: transparent;
+
+    transition: all 300ms ease;
+}
+
+.headerButtonCv:hover {
+    translate: -2% -5%;
+
+    box-shadow: 5px 5px 0px 0px #58d8c1;
+}
+
+.headerButtonCv > a {
+    text-decoration: none;
+    
+    font-size: 1.2em;
+
+    color: #ccd6f6;
+
+    transition: color 300ms ease;
+}
+
+.headerButtonCv > a:hover {
+    color: #ccd6f68f;
+}
+
+
+@media (width < 480px) {
+    .headerMenu {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .headerMenuList {
+        display: none;
+    }
+
+    .inputCheckBox:checked ~ .headerMenuList {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        gap: .5em;
+
+        padding: 1em;
+
+        border-radius: .2em;
+        
+        background: #ccd6f6;
+
+        position: absolute;
+        top: 120%;
+
+        z-index: 99;
+
+        animation: showMenuMobile 300ms linear;
+
+    }
+
+    .menuItem {
+        color: #000;
+    }
+
+    .menuItem:hover {
+        color: #00000080;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .headerButtonCv {
+        width: 50%;
+    }
+}
+
+@keyframes showMenuMobile {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(50%);
+        opacity: .5;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}

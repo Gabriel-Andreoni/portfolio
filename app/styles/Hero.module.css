@@ -1,0 +1,157 @@
+.heroContainer {
+    width: 100%;
+    height: calc(100vh - 20vh);
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 1em;
+}
+
+.heroApresentation {
+    width: 60%;
+    height: 100%;
+}
+
+.fistTitleContainer,
+.bigHeading,
+.resumeProfile {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 0 0 4em;
+}
+
+.firstTitle {
+    font-size: .9em;
+    font-weight: normal;
+
+    color: #58D8C0;
+}
+
+.bigHeading>h2 {
+    font-size: 6em;
+    font-weight: normal;
+
+    color: #ccd6f6;
+}
+
+.bigHeading>h3 {
+    margin-top: .5em;
+
+    font-size: 2em;
+    font-weight: normal;
+
+    color: #ccd6f6c4;
+}
+
+.resumeProfile {
+    width: 85%;
+}
+
+.resumeProfile>h4 {
+    margin-top: 1.5em;
+
+    font-size: 1.5em;
+    font-weight: normal;
+
+    color: #ccd6f6c4;
+}
+
+.heroApresentation>button {
+    width: 50%;
+
+    margin: 2em 7%;
+    padding: 1em;
+
+    border: 1px solid #58D8C0;
+    border-radius: .2em;
+
+    
+
+    font-size: 1.5em;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    transition: all 300ms ease;
+}
+
+.heroApresentation>button:hover {
+    translate: -2% -5%;
+
+    box-shadow: 5px 5px 0px 0px #58d8c1;
+}
+
+.heroApresentation>button > a {
+    text-decoration: none;
+
+    color: #ccd6f6c4;
+
+    transition: all 300ms ease;
+}
+
+.heroApresentation>button > a:hover {
+    color: #ccd6f681;
+}
+
+.heroImage {
+    width: 30%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.heroImage img {
+    width: 100%;
+    height: 100%;
+
+    border-radius: .2em;
+
+    object-fit: cover;
+
+    transition: scale 300ms ease;
+}
+
+.heroImage:hover img {
+    scale: 120%;
+}
+
+@media (width < 498px) {
+
+    .fistTitleContainer,
+    .bigHeading,
+    .resumeProfile {
+        padding: 1em;
+    }
+
+    .heroApresentation {
+        width: 100%;
+    }
+
+    .bigHeading > h2 {
+        font-size: 2em;
+    }
+
+
+    .resumeProfile > h4 {
+        margin-top: 0;
+    }
+
+    .heroApresentation>button {
+        width: 70%;
+
+        margin: 0 6%;
+    }
+
+    .heroImage {
+        display: none;
+    }
+
+
+}
