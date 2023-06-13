@@ -27,9 +27,9 @@ export default function About() {
             <h4 data-aos="fade-up" data-aos-duration="500" data-aos-delay="1400">Abaixo estão as tecnologias que domino e tenho contado no meu dia a dia, mas é claro, estou sempre aberto a novas tecnologias.</h4>
 
             <ul className={styles.habilitiesContainer}>
-               {sourceIcons.map((src) => {
+               {sourceIcons.map((src, index) => {
                 return (
-                    <li>
+                    <li key={index}>
                         <Image src={`/${src.src}`} alt={src.alt} width='40' height='40' />
 
                         <span>
