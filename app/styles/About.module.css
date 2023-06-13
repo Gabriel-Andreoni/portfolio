@@ -1,0 +1,111 @@
+.aboutContainer {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 1em;
+
+    position: relative;
+}
+
+.aboutContainer > h1 {
+    padding-top: 2em;
+
+    font-size: 2.2em;
+    font-weight: normal;
+
+
+    color: #ccd6f6c4;
+}
+
+.highlightText {
+    color: #58D8C0;
+}
+
+.aboutContainer > h2 {
+    width: 76%;
+
+    padding-top: 2em;
+    padding-left: 1em;
+
+    font-size: 1.2em;
+    
+    line-height: 1.5em;
+
+    font-weight: normal;
+
+    color: #ccd6f6c4;
+}
+
+.aboutContainer > h3,
+.aboutContainer > h4 {
+    width: 61%;
+
+  
+    padding-top: 2em;
+    padding-left: 1em;
+
+    font-size: 1.2em;
+    font-weight: normal;
+
+    color: #ccd6f6c4;
+}
+
+.habilitiesContainer {
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+
+    padding: 1em;
+
+    list-style: none;
+}
+
+.habilitiesContainer > li {
+    width: 30%;
+    padding-top: 2em;
+
+    display: flex;
+    align-items: center;
+    gap: .2em;
+}
+
+.habilitiesContainer > li > span {
+    padding: .5em;
+
+    border-radius: .2em;
+
+    color: #000;
+
+    background: #ccd6f6;
+}
+
+@media (width < 498px) {
+    .aboutContainer > h1 {
+        font-size: 1.6em;
+    }
+
+    .aboutContainer > h2,
+    .aboutContainer > h3,
+    .aboutContainer > h4 {
+        width: 90%;
+    }
+    
+    .habilitiesContainer  {
+        width: 100%;
+
+        padding: 0;
+
+        justify-content: space-around;
+
+        gap: 2em;
+    }
+
+    .habilitiesContainer > li {
+        width: fit-content;
+    }
+}
