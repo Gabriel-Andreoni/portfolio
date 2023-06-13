@@ -53,7 +53,7 @@
 }
 
 .habilitiesContainer {
-    width: 50%;
+    width: 100%;
 
     display: flex;
     align-items: center;
@@ -71,7 +71,7 @@
 
     display: flex;
     align-items: center;
-    gap: .2em;
+    gap: .5em;
 }
 
 .habilitiesContainer > li > span {
