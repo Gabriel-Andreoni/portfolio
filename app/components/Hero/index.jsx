@@ -10,7 +10,7 @@ export default function Hero() {
                 </div>
                 <div className={styles.bigHeading}>
                     <h2>Gabriel Andreoni</h2>
-                    <h3>Eu desenvolvo coisas para a web.</h3>
+                    <h3>Eu sou um desenvolvedor web.</h3>
                 </div>
                 <div className={styles.resumeProfile}>
                     <h4>Sou um desenvolvedor front end apaixonado pelo que faz.
