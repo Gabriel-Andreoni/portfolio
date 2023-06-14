@@ -3,7 +3,7 @@
     height: calc(100vh - 20vh);
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
     padding: 1em;
 }
