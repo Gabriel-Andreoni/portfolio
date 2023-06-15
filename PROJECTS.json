@@ -1,0 +1,34 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "name": "Magníficos Lanches",
+            "description": "Landing page desenvolvida em NextJS para uma lanchonete",
+            "tecnologies": ["NextJs", "React"],
+            "image": "projectImage01.png",
+            "site": "https://www.magnificoslanches.com.br/",
+            "gitHub": "https://github.com/Gabriel-Andreoni/magnificos-site"
+        },
+
+        {
+            "id": 2,
+            "name": "Sistema de Financiamentos de Veículos",
+            "description": "Sistema de financiamentos de veículos no qual é possível colocar as informações sobre marca, ano, valor, valor de entrada e quantidade de parcelas. Também é possível listar os dados cadastrados, editar e excluir.",
+            "tecnologies": ["React", "Context API", "Axios", "React Hook Form"],
+            "image": "projectImage02.png",
+            "site": "https://rainbow-gaufre-ae6f64.netlify.app/",
+            "gitHub": "https://github.com/Gabriel-Andreoni/CRUD-SYSTEM"
+        },
+
+        {
+            "id": 3,
+            "name": "Pokedéx",
+            "description": "Pokedéx feita em React, podendo consultar o nome do pokémon, bem como suas estatísticas, bem como tipo e habilidades. ",
+            "tecnologies": ["React", "Axios"],
+            "image": "projectImage03.png",
+            "site": "https://pokedex-react-nine-iota.vercel.app/",
+            "gitHub": "https://github.com/Gabriel-Andreoni/Pokedex-React"
+        }
+
+    ]
+}
