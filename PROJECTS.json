@@ -23,7 +23,7 @@
         {
             "id": 3,
             "name": "Pokedéx",
-            "description": "Pokedéx feita em React, podendo consultar o nome do pokémon, bem como suas estatísticas, bem como tipo e habilidades. ",
+            "description": "Pokedéx feita em React, podendo consultar o nome do pokémon, bem como suas estatísticas, tipo e habilidades. ",
             "tecnologies": ["React", "Axios"],
             "image": "projectImage03.png",
             "site": "https://pokedex-react-nine-iota.vercel.app/",

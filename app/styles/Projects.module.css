@@ -15,30 +15,23 @@
     display: flex;
     gap: 2em;
 
-    position: relative;
 }
 
 .projectImageCover {
-    width: 50%;
+    width: 60%;
     height: 50%;
 
     cursor: pointer;
 }
 
-
-
 .projectContent {
     width: 40%;
-    height: 100%;
+    height: auto;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-
-    position: absolute;
-    top: 0;
-    right: 20%;
 }
 
 .projectDescription {
@@ -49,6 +42,8 @@
 }
 
 .projectDescription > h1 {
+    margin-bottom: 1em;
+
     font-size: 2em;
     font-weight: normal;
 
