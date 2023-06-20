@@ -3,6 +3,8 @@
 
     display: block;
 
+    padding-top: 4em;
+
     position: relative;
 
     font-size: 2em;
@@ -19,7 +21,7 @@
     display: block;
 
     position: absolute;
-    top: 50%;
+    top: 85%;
     left: 10%;
 
     border-bottom: 1px solid #ccd6f6c4;
