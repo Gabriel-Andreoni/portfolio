@@ -1,17 +1,37 @@
+"use client"
+
+import { useRef, useEffect } from 'react'
 import styles from './../../styles/Hero.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
+import Typed from 'typed.js'
+
 export default function Hero() {
+    const el = useRef(null);
+
+    useEffect(() => {
+        const typed = new Typed(el.current, {
+            strings: ["Muito prazer", "Eu sou o Gabriel Andreoni", "Desenvolvedor web."],
+
+            startDelay: 300,
+            typeSpeed: 50,
+            backSpeed: 50,
+            backDelay: 100,
+            loop: true,
+            loopCount: Infinity,
+        });
+
+
+        return () => {
+            typed.destroy();
+        };
+    }, []);
+
+
     return (
         <main className={styles.heroContainer}>
             <section className={styles.heroApresentation}>
-                <div className={styles.fistTitleContainer}>
-                    <h1 className={styles.firstTitle}>Olá, meu nome é</h1>
-                </div>
-                <div className={styles.bigHeading}>
-                    <h2>Gabriel Andreoni</h2>
-                    <h3>Eu sou um desenvolvedor web.</h3>
-                </div>
+                <span className={styles.bigHeading} ref={el} />
                 <div className={styles.resumeProfile}>
                     <h4>Sou um desenvolvedor front end apaixonado pelo que faz.
                         Construo desde landing pages, e-commerce até web-apps utilizando <span>React</span>.
