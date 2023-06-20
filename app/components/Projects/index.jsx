@@ -2,10 +2,13 @@ import DATA from '../../../PROJECTS.json'
 import styles from '../../styles/Projects.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
+import HeaderIndicator from '../HeaderIndicator'
 
 export default function Projects() {
     return (
         <main className={styles.projectsContainer}>
+            <HeaderIndicator header="Projetos" />
+            
             <ul className={styles.projectList}>
                 {DATA.projects.map((project, index) => {
                     return (

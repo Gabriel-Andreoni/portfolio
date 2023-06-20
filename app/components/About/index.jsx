@@ -1,5 +1,6 @@
 import styles from '../../styles/About.module.css'
 import Image from 'next/image'
+import HeaderIndicator from '../HeaderIndicator'
 
 export default function About() {
     const sourceIcons = [
@@ -18,6 +19,8 @@ export default function About() {
 
     return (
         <main className={styles.aboutContainer}>
+            <HeaderIndicator header="Sobre" />
+            
             <h1 data-aos="fade-up" data-aos-duration="500" data-aos-delay="500"><span className={styles.highlightText}>Olá,</span> meu nome é <span className={styles.highlightText}>Gabriel Andreoni</span> e é um <span>prazer</span> conhecer você.</h1>
 
             <h2 data-aos="fade-up" data-aos-duration="500" data-aos-delay="1200"> Sou <span className={styles.highlightText}>apaixonado</span> pelo mundo da tecnologia, meu primeiro contato com esse mundo foi em 2013 quando desevolvi algumas páginas em HTML utilizando o saudosista <span className={styles.highlightText}>Adobe Dreamweaver.</span> Nesse meio tempo também desenvolvi alguns projetos em <span className={styles.highlightText}>Pascal</span> e de lá para cá fui me apaixonando cada vez mais com os desafios e satisfações que o mundo da programação nos proporciona.</h2>

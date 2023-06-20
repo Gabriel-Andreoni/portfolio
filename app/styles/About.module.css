@@ -10,7 +10,7 @@
 }
 
 .aboutContainer > h1 {
-    padding-top: 2em;
+    padding: 1em;
 
     font-size: 2.2em;
     font-weight: normal;
@@ -26,8 +26,8 @@
 .aboutContainer > h2 {
     width: 76%;
 
-    padding-top: 2em;
-    padding-left: 1em;
+    padding-top: .5em;
+    padding-left: 2em;
 
     font-size: 1.2em;
     
@@ -42,9 +42,8 @@
 .aboutContainer > h4 {
     width: 61%;
 
-  
     padding-top: 2em;
-    padding-left: 1em;
+    padding-left: 2em;
 
     font-size: 1.2em;
     font-weight: normal;
@@ -61,6 +60,7 @@
     gap: 1em;
 
     padding: 1em;
+    padding-left: 2em;
 
     list-style: none;
 }
