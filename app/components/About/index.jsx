@@ -5,7 +5,7 @@ export default function About() {
     const sourceIcons = [
         {name: 'HTML', src: 'icons/html-icon.png', alt: 'HTML icon'},
         {name: 'CSS', src: 'icons/css-icon.png', alt: 'CSS icon'},
-        {name: 'TAILWIND', src: 'icons/tailwind-icon.png', atl: 'TAILWIND icon'},
+        {name: 'TAILWIND', src: 'icons/tailwind-icon.png', alt: 'TAILWIND icon'},
         {name: 'LESS', src: 'icons/less-icon.png', alt: 'LESS icon'},
         {name: 'SASS', src: 'icons/sass-icon.png', alt: 'SASS icon'},
         {name: 'BOOTSTRAP', src: 'icons/bootstrap-icon.png', alt: 'BOOTSTRAP icon'},
