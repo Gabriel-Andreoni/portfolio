@@ -80,3 +80,17 @@
     align-items: center;
     gap: 2em;
 }
+
+@media (width < 498px) {
+    .projectItem {
+        flex-direction: column;
+    }
+
+    .projectImageCover {
+        width: 100%;
+    }
+
+    .projectContent {
+        width: 100%;
+    }
+}
