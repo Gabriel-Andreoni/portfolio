@@ -11,12 +11,12 @@ export default function Hero() {
 
     useEffect(() => {
         const typed = new Typed(el.current, {
-            strings: ["Muito prazer", "Eu sou o Gabriel Andreoni", "Desenvolvedor web."],
+            strings: ["Muito prazer", "Eu sou o Gabriel Andreoni", "Programador."],
 
             startDelay: 300,
             typeSpeed: 50,
             backSpeed: 50,
-            backDelay: 100,
+            backDelay: 700,
             loop: true,
             loopCount: Infinity,
         });
@@ -31,7 +31,9 @@ export default function Hero() {
     return (
         <main className={styles.heroContainer}>
             <section className={styles.heroApresentation}>
-                <span className={styles.bigHeading} ref={el} />
+                <div className={styles.bigHeading}>
+                    <span ref={el} />
+                </div>
                 <div className={styles.resumeProfile}>
                     <h4>Sou um desenvolvedor front end apaixonado pelo que faz.
                         Construo desde landing pages, e-commerce até web-apps utilizando <span>React</span>.

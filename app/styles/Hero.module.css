@@ -29,7 +29,14 @@
 }
 
 .bigHeading {
-    font-size: clamp(1em, 5em, 4em);
+    margin-top: 4em;
+
+    display: block;
+}
+
+.bigHeading > span {
+
+    font-size: clamp(2em, 4em, 5em);
     font-weight: normal;
 
     color: #ccd6f6;
@@ -114,7 +121,6 @@
 @media (width < 498px) {
 
     .fistTitleContainer,
-    .bigHeading,
     .resumeProfile {
         padding: 1em;
     }
@@ -123,8 +129,8 @@
         width: 100%;
     }
 
-    .bigHeading > h2 {
-        font-size: 2em;
+    .bigHeading {
+        font-size: 1em;
     }
 
 
