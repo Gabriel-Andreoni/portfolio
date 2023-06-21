@@ -142,4 +142,8 @@
     .footerContainer span {
         width: 80%;
     }
+
+    .footerContainer span > button > a {
+        padding: 0 2em;
+    }
 }
