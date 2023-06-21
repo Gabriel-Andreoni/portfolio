@@ -6,7 +6,7 @@ import HeaderIndicator from '../HeaderIndicator'
 
 export default function Projects() {
     return (
-        <main className={styles.projectsContainer}>
+        <main className={styles.projectsContainer} id="projects">
             <HeaderIndicator header="Projetos" />
             
             <ul className={styles.projectList}>

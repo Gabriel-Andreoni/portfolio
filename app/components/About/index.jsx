@@ -18,7 +18,7 @@ export default function About() {
     ]
 
     return (
-        <main className={styles.aboutContainer}>
+        <main className={styles.aboutContainer} id="about">
             <HeaderIndicator header="Sobre" />
             
             <h1 data-aos="fade-up" data-aos-duration="500" data-aos-delay="500"><span className={styles.highlightText}>Olá,</span> meu nome é <span className={styles.highlightText}>Gabriel Andreoni</span> e é um <span>prazer</span> conhecer você.</h1>

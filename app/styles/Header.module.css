@@ -47,17 +47,17 @@
     list-style: none;
 }
 
-.menuItem {
-    font-size: 1.2em;
+.menuItem > a {
+    text-decoration: none;
     
-    color: #ccd6f6;
+    font-size: 1.2em;
 
-    cursor: pointer;
+    color: #ccd6f6;
 
     transition: color 300ms ease;
 }
 
-.menuItem:hover {
+.menuItem > a:hover {
     color: #ccd6f68f;
 }
 

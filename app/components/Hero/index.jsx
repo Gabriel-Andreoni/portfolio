@@ -29,7 +29,7 @@ export default function Hero() {
 
 
     return (
-        <main className={styles.heroContainer}>
+        <main className={styles.heroContainer} id="home">
             <section className={styles.heroApresentation}>
                 <div className={styles.bigHeading}>
                     <span ref={el} />
