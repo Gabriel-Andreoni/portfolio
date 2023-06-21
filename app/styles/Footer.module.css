@@ -150,4 +150,8 @@
     .footerBottom p  {
         font-size: .9em;
     }
+
+    .footerBottom {
+        padding: 1em;
+    }
 }
