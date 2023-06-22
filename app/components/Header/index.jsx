@@ -4,6 +4,17 @@ import Link from "next/link"
 import { motion } from 'framer-motion'
 
 export default function Header() {
+    const handleScroll = (e) => {
+        e.preventDefault()
+
+        let href = e.currentTarget.href
+        let targetID = href.replace(/.*\#/, "")
+
+        let element = document.getElementById(targetID)
+        element.scrollIntoView({
+            behaivor: "smooth"
+        })
+    }
 
     return (
         <header className={styles.headerContainer} id="header">
@@ -20,7 +31,7 @@ export default function Header() {
 
 
                         className={styles.menuItem}>
-                        <Link href="#header">Home</Link>
+                        <Link href="#header" onClick={handleScroll}>Home</Link>
                     </motion.li>
 
                     <motion.li
@@ -28,7 +39,7 @@ export default function Header() {
                         animate={{ y: [-50, 0], opacity: 1 }}
                         transition={{ duration: 0.2 }}
                         className={styles.menuItem}>
-                        <Link href="#about">Sobre</Link>
+                        <Link href="#about" onClick={handleScroll}>Sobre</Link>
                     </motion.li>
 
                     <motion.li
@@ -36,7 +47,7 @@ export default function Header() {
                         animate={{ y: [-50, 0], opacity: 1 }}
                         transition={{ duration: 0.4 }}
                         className={styles.menuItem}>
-                        <Link href="#projects">Projetos</Link>
+                        <Link href="#projects" onClick={handleScroll}>Projetos</Link>
                     </motion.li>
 
                     <motion.li
@@ -44,7 +55,7 @@ export default function Header() {
                         animate={{ y: [-50, 0], opacity: 1 }}
                         transition={{ duration: 0.6 }}
                         className={styles.menuItem}>
-                        <Link href="#contact">Contato</Link>
+                        <Link href="#contact" onClick={handleScroll}>Contato</Link>
                     </motion.li>
                 </ul>
 
