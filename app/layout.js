@@ -6,7 +6,7 @@ const roboto = Roboto({ subsets: ['latin'], weight: '300' })
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="pt-br" style={{ scrollBehavior: 'smooth'}}>
+    <html lang="pt-br">
       <body className={roboto.className}>{children}</body>
     </html>
   )
