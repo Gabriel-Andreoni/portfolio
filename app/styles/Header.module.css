@@ -129,12 +129,8 @@
 
     }
 
-    .menuItem {
+    .menuItem > a {
         color: #000;
-    }
-
-    .menuItem:hover {
-        color: #00000080;
     }
 
     .hamburger {
