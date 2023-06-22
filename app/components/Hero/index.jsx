@@ -18,8 +18,6 @@ export default function Hero() {
             typeSpeed: 50,
             backSpeed: 50,
             backDelay: 700,
-            loop: true,
-            loopCount: Infinity,
         });
 
 

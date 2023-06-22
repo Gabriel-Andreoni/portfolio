@@ -36,7 +36,7 @@
 
 .bigHeading > span {
 
-    font-size: clamp(2em, 4em, 5em);
+    font-size: clamp(2em, 3em, 5em);
     font-weight: normal;
 
     color: #ccd6f6;
