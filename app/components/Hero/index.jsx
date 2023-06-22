@@ -5,6 +5,7 @@ import styles from './../../styles/Hero.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
 import Typed from 'typed.js'
+import { motion } from 'framer-motion'
 
 export default function Hero() {
     const el = useRef(null);
@@ -32,21 +33,39 @@ export default function Hero() {
         <main className={styles.heroContainer} id="home">
             <section className={styles.heroApresentation}>
                 <div className={styles.bigHeading}>
-                    <span ref={el} />
+                    <motion.span ref={el}
+                        initial={{ opacity: 0 }}
+                        animate={{ y: [-50, 0], opacity: 1 }}
+                        transition={{ duration: 0.8 }}
+                    />
                 </div>
                 <div className={styles.resumeProfile}>
-                    <h4>Sou um desenvolvedor front end apaixonado pelo que faz.
+                    <motion.h4
+                        initial={{ opacity: 0 }}
+                        animate={{ y: [-50, 0], opacity: 1 }}
+                        transition={{ duration: 0.8 }}
+
+                    >Sou um desenvolvedor front end apaixonado pelo que faz.
                         Construo desde landing pages, e-commerce até web-apps utilizando <span>React</span>.
-                    </h4>
+                    </motion.h4>
                 </div>
-                <button>
+                <motion.button
+                    initial={{ opacity: 0 }}
+                    animate={{ y: [-50, 0], opacity: 1 }}
+                    transition={{ duration: 0.8 }}
+                >
                     <Link href="mailto:gabriel.andreoni.developer@gmail.com">Entre em contato</Link>
-                </button>
+                </motion.button>
             </section>
 
-            <section className={styles.heroImage}>
+            <motion.section
+                initial={{ opacity: 0 }}
+                animate={{ y: [-50, 0], opacity: 1 }}
+                transition={{ duration: 0.8 }}
+                className={styles.heroImage}
+            >
                 <Image src="/profile-photo.jpg" alt='foto de perfil' width="400" height="400" />
-            </section>
+            </motion.section>
         </main>
     )
 }

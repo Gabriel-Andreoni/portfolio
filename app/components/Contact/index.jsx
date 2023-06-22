@@ -3,6 +3,7 @@ import { useState } from 'react'
 import styles from '../../styles/Contact.module.css'
 import emailjs from '@emailjs/browser'
 import HeaderIndicator from '../HeaderIndicator'
+import { motion } from 'framer-motion'
 
 
 export default function Contact() {
@@ -38,30 +39,47 @@ export default function Contact() {
     }
 
     return (
-        <main className={styles.contactContainer} id="contact">
-            
+        <motion.main
+            initial={{ opacity: 0 }}
+            animate={{ y: [50, 0], opacity: 1 }}
+            transition={{ duration: 1 }}
+            className={styles.contactContainer}
+            id="contact">
+
             <HeaderIndicator header="Contato" />
 
             <form onSubmit={handleSubmit} data-aos="fade-up" data-aos-duration="500" data-aos-delay="600">
-                <div>
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ y: [50, 0], opacity: 1 }}
+                    transition={{ duration: 1.2 }}
+                >
                     <label htmlFor="name">Nome Completo</label>
                     <input
                         type="text"
                         id="name"
                         onChange={(e) => setName(e.target.value)}
                         value={name} />
-                </div>
+                </motion.div>
 
-                <div>
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ y: [50, 0], opacity: 1 }}
+                    transition={{ duration: 1.4 }}
+                >
                     <label htmlFor="email">E-mail</label>
                     <input
                         type="email"
                         id="email"
                         onChange={(e) => setEmail(e.target.value)}
                         value={email} />
-                </div>
+                </motion.div>
 
-                <div>
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ y: [50, 0], opacity: 1 }}
+                    transition={{ duration: 1.6 }}
+                >
                     <label htmlFor="message">Mensagem</label>
                     <textarea
                         name="message"
@@ -71,10 +89,14 @@ export default function Contact() {
                         onChange={(e) => setMessage(e.target.value)}
                         value={message}
                     ></textarea>
-                </div>
+                </motion.div>
 
-                <button type="submit">Enviar e-mail</button>
+                <motion.button
+                    initial={{ opacity: 0 }}
+                    animate={{ y: [50, 0], opacity: 1 }}
+                    transition={{ duration: 1.8 }}
+                    type="submit" >Enviar e-mail</motion.button>
             </form>
-        </main>
+        </motion.main>
     )
 } 

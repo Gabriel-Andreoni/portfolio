@@ -1,5 +1,7 @@
+"use client"
 import styles from './../../styles/Header.module.css'
 import Link from "next/link"
+import { motion } from 'framer-motion'
 
 export default function Header() {
 
@@ -12,25 +14,49 @@ export default function Header() {
                 </label>
 
                 <ul className={styles.headerMenuList} id="menuList">
-                    <li className={styles.menuItem} data-aos="fade-up" >
+                    <motion.li
+                        initial={{ opacity: 0 }}
+                        animate={{ y: [-50, 0], opacity: 1 }}
+
+
+                        className={styles.menuItem}>
                         <Link href="#header">Home</Link>
-                    </li>
-                    <li className={styles.menuItem}>
+                    </motion.li>
+
+                    <motion.li
+                        initial={{ opacity: 0 }}
+                        animate={{ y: [-50, 0], opacity: 1 }}
+                        transition={{ duration: 0.2 }}
+                        className={styles.menuItem}>
                         <Link href="#about">Sobre</Link>
-                    </li>
-                    <li className={styles.menuItem}>
+                    </motion.li>
+
+                    <motion.li
+                        initial={{ opacity: 0 }}
+                        animate={{ y: [-50, 0], opacity: 1 }}
+                        transition={{ duration: 0.4 }}
+                        className={styles.menuItem}>
                         <Link href="#projects">Projetos</Link>
-                    </li>
-                    <li className={styles.menuItem}>
+                    </motion.li>
+
+                    <motion.li
+                        initial={{ opacity: 0 }}
+                        animate={{ y: [-50, 0], opacity: 1 }}
+                        transition={{ duration: 0.6 }}
+                        className={styles.menuItem}>
                         <Link href="#contact">Contato</Link>
-                    </li>
+                    </motion.li>
                 </ul>
 
-                <button className={styles.headerButtonCv}>
+                <motion.button
+                    initial={{ opacity: 0 }}
+                    animate={{ y: [-50, 0], opacity: 1 }}
+                    transition={{ duration: 0.8 }}
+                    className={styles.headerButtonCv}>
                     <Link href="/curriculo-dev.docx" download>
                         Currículo
                     </Link>
-                </button>
+                </motion.button>
             </nav>
         </header>
     )

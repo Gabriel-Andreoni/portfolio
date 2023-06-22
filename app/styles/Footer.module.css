@@ -121,14 +121,10 @@
 .footerBottom p > span > a {
     text-decoration: none;
 
-    color: #ccd6f690;
-
-    transition: color 300ms ease;
-}
-
-.footerBottom p > span > a:hover {
     color: #58D8C0;
 }
+
+
 
 @media (width < 498px) {
     .footerHeader h1 {
