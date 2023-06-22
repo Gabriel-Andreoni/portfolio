@@ -12,7 +12,7 @@ export default function Hero() {
 
     useEffect(() => {
         const typed = new Typed(el.current, {
-            strings: ["Muito prazer", "Eu sou o Gabriel Andreoni."],
+            strings: ["Muito prazer", "Meu nome é Gabriel Andreoni."],
 
             startDelay: 300,
             typeSpeed: 50,
