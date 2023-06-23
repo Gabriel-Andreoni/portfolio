@@ -34,7 +34,7 @@ export default function About() {
                 initial={{ opacity: 0 }}
                 animate={{ y: [50, 0], opacity: 1 }}
                 transition={{ duration: 1 }}
-            > Sou <span className={styles.highlightText}>apaixonado</span> pelo mundo da tecnologia, meu primeiro contato com esse mundo foi em 2013 quando desevolvi algumas páginas em HTML utilizando o saudosista <span className={styles.highlightText}>Adobe Dreamweaver.</span> Nesse meio tempo também desenvolvi alguns projetos em <span className={styles.highlightText}>Pascal</span> e de lá para cá fui me apaixonando cada vez mais com os desafios e satisfações que o mundo da programação nos proporciona.</motion.h2>
+            > Sou <span className={styles.highlightText}>apaixonado</span> pelo mundo da tecnologia, meu primeiro contato com esse mundo foi em 2013 quando desevolvi algumas páginas em HTML utilizando o saudoso <span className={styles.highlightText}>Adobe Dreamweaver.</span> Nesse meio tempo também desenvolvi alguns projetos em <span className={styles.highlightText}>Pascal</span> e de lá para cá fui me apaixonando cada vez mais com os desafios e satisfações que o mundo da programação nos proporciona.</motion.h2>
 
             <motion.h3
                 initial={{ opacity: 0 }}
