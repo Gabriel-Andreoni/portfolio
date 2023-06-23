@@ -37,7 +37,7 @@ export default function Footer() {
                     animate={{ y: [50, 0], opacity: 1 }}
                     transition={{ duration: 1.6 }}
                 >
-                    <Link href="mailto:gabriel.andreoni.developer@gmail.com">Diga olá</Link>
+                    <Link href="mailto:gabriel.andreoni.developer@gmail.com">Mande um oi</Link>
                 </motion.button>
             </span>
 
