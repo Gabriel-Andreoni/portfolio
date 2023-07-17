@@ -3,7 +3,7 @@ import { Roboto } from 'next/font/google'
 
 export const metadata = {
   icons: {
-    icon: '',
+    icon: '/public/fav-ico.png',
   },
 };
 
