@@ -8,9 +8,9 @@ export const metadata = {
   title: 'Gabriel Androeoni',
   description: 'Desenvolvedor Front End',
   icons: {
-    icon: '/fav-ico.png',
+    icon: '/public/fav-ico.png',
   },
-};
+}
 
 export default function RootLayout({ children }) {
   return (
