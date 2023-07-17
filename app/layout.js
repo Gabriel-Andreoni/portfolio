@@ -8,7 +8,7 @@ export const metadata = {
   title: 'Gabriel Androeoni',
   description: 'Desenvolvedor Front End',
   icons: {
-    icon: '/public/fav-ico.png',
+    icon: '/favicon.png',
   },
 }
 
