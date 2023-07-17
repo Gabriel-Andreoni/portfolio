@@ -62,7 +62,7 @@ export default function Hero() {
                 transition={{ duration: 0.8 }}
                 className={styles.heroImage}
             >
-                <Image src="/profile-photo.jpg" alt='foto de perfil' width="400" height="400" />
+                <Image src="/profile-photo.jpeg" alt='foto de perfil' width="400" height="400" />
             </motion.section>
         </main>
     )
