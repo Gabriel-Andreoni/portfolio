@@ -1,6 +1,12 @@
 import './styles/globals.css'
 import { Roboto } from 'next/font/google'
 
+export const metadata = {
+  icons: {
+    icon: '',
+  },
+};
+
 
 const roboto = Roboto({ subsets: ['latin'], weight: '300' })
 
